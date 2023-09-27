@@ -1,0 +1,10 @@
+{
+    "id": "miBoton2",
+    "texto": "Haz clic en mí",
+    "colorFondo": "#3498db",
+    "colorTexto": "#ffffff",
+    "ancho": "150px",
+    "alto": "40px",
+    "accion": "function() { alert('¡Hiciste clic en el botón!'); }"
+  }
+  

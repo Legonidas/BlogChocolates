@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página con Fondo desde JSON</title>
+  <title>Botón Personalizado</title>
+</head>
+<body>
+  <div class="background-container">
+    <h1>Mis Redes Sociales</h1>
+</div>
+<script src="script.js"></script>
+  <header>
+    <div class="container-fluid">
+        <nav class="nav-main">
+            <div id="menu">
+            <ul class="nav-menu">                
+                <li>
+                    <a href="index.html" class="link">HomePage</a>
+                </li>
+                <li>
+                    <a href="Imagenes.html" class="link">Imagenes</a>
+                </li>
+
+            </ul>
+            </div>
+        </nav>
+    </header>
+  <script>
+    // Cargar el JSON
+    var botonJSON = {
+      "id": "miBoton",
+      "texto": "Facebook",
+      "colorFondo": "#DBB433",
+      "colorTexto": "#000000",
+      "ancho": "200px",
+      "alto": "40px",
+      "accion": function() {
+        alert('Facebook: Lyj Chocolates → Seguime. Gracias por visitar mi blog ♥');
+      }
+    };
+
+    // Crear el botón personalizado
+    var boton = document.createElement("button");
+    boton.id = botonJSON.id;
+    boton.textContent = botonJSON.texto;
+    boton.style.backgroundColor = botonJSON.colorFondo;
+    boton.style.color = botonJSON.colorTexto;
+    boton.style.width = botonJSON.ancho;
+    boton.style.height = botonJSON.alto;
+    boton.addEventListener("click", botonJSON.accion);
+
+    // Agregar el botón al cuerpo del documento
+    document.body.appendChild(boton);
+
+    var botonJSON = {
+      "id": "miBoton2",
+      "texto": "Instagram",
+      "colorFondo": "#DBB433",
+      "colorTexto": "#000000",
+      "ancho": "200px",
+      "alto": "40px",
+      "accion": function() {
+        alert('Instagram: Chocolyj → Seguime. Gracias por visitar mi blog ♥');
+      }
+    };
+
+    // Crear el botón personalizado
+    var boton = document.createElement("button");
+    boton.id = botonJSON.id;
+    boton.textContent = botonJSON.texto;
+    boton.style.backgroundColor = botonJSON.colorFondo;
+    boton.style.color = botonJSON.colorTexto;
+    boton.style.width = botonJSON.ancho;
+    boton.style.height = botonJSON.alto;
+    boton.addEventListener("click", botonJSON.accion);
+
+    // Agregar el botón al cuerpo del documento
+    document.body.appendChild(boton);
+    
+  </script>
+</body>
+</html>
